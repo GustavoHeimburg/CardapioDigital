@@ -31,21 +31,21 @@ const burguerPicanha = {
   preco: 'R$ 44,90',
   imagem: burguerPicanhaImg,
   descricao:
-    'Burguer de Picanha Angus, Queijo Cheddar, Crisp de Cebola e Geléia de Bacon',
+      'Burguer de Picanha Angus, Queijo Cheddar, Crisp de Cebola e Geléia de Bacon',
 };
 const fishChips = {
   nome: 'Fish and Chips',
   preco: 'R$ 79,90',
   imagem: fishChipsImg,
   descricao:
-    'Iscas de Peixe Empanada na Farinha Panko e Flocos de Milho e Batata Frita Palito',
+      'Iscas de Peixe Empanada na Farinha Panko e Flocos de Milho e Batata Frita Palito',
 };
 const risotoCamaraoTrufado = {
   nome: 'Risoto de Camarão Trufado',
   preco: 'R$ 72,90',
   imagem: risotoCamaraoTrufadoImg,
   descricao:
-    'Arroz Arbóreo, camarões salteados no azeite trufado e crocantes de panko',
+      'Arroz Arbóreo, camarões salteados no azeite trufado e crocantes de panko',
 };
 
 const brownie = {
@@ -53,21 +53,21 @@ const brownie = {
   preco: 'R$ 32,90',
   imagem: brownieImg,
   descricao:
-    'Delicioso brownie caseiro, sorvete de creme, calda quente de chocolate',
+      'Delicioso brownie caseiro, sorvete de creme, calda quente de chocolate',
 };
 const cocadaForno = {
   nome: 'Cocada de Forno',
   preco: 'R$ 32,90',
   imagem: cocadaFornoImg,
   descricao:
-    'Cremosa cocada de coco torrado, doce de leite argentino e sorvete de creme',
+      'Cremosa cocada de coco torrado, doce de leite argentino e sorvete de creme',
 };
 const petitGateau = {
   nome: 'Petit Gateau',
   preco: 'R$ 34,90',
   imagem: petitGateauImg,
   descricao:
-    'Bolo quente recheado com ganache de chocolate, leite condensado e castanha de caju',
+      'Bolo quente recheado com ganache de chocolate, leite condensado e castanha de caju',
 };
 
 const aguaSemGas = {

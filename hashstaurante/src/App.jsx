@@ -1,16 +1,31 @@
-import hashstaurante from "./assets/hashtaurante.webp"
-import './App.css'
-import {Navegacao} from "./Navegacao";
-import {ItemCardapio} from "./ItemCardapio.jsx";
-import {pratosPrincipais} from "./cardapio.js";
+import React from 'react';
+import './App.css';
+import hashtauranteImg from './assets/hashtaurante.webp';
+import Navegacao from './navegacao';
+import ItemCardapio from './ItemCardapio';
+import { pratosPrincipais, sobremesas, bebidas } from './cardapio';
 
-export function App() {
+function App() {
+    const [paginaSelecionada, alterarPaginaSelecionada] = React.useState(0);
 
-    return <>
-        <img src={hashstaurante} className="capa"/>
-        <Navegacao/>
-        <div className="menu">
-            {pratosPrincipais.map(item => <ItemCardapio nome={item.nome} <ItemCardapio nome={item.nome} <descricao nome={item.nome} <ItemCardapio nome={item.nome}/>)}
-        </div>
-         </>
+    const secoesMenu = [pratosPrincipais, sobremesas, bebidas];
+
+    return (
+        <>
+            <img src={hashtauranteImg} className="capa"></img>
+            <Navegacao alterarPaginaSelecionada={alterarPaginaSelecionada} />
+            <div className="menu">
+                {secoesMenu[paginaSelecionada].map((prato) => (
+                    <ItemCardapio
+                        nome={prato.nome}
+                        preco={prato.preco}
+                        descricao={prato.descricao}
+                        imagem={prato.imagem}
+                    />
+                ))}
+            </div>
+        </>
+    );
 }
+
+export default App;

@@ -1,10 +1,23 @@
-export function Navegacao() {
-    return <div className="navegacao">
-        <input type="radio" name="opcao-pagina" id="pagina-0" defaultChecked/>
-        <label htmlFor="pagina-0">Pratos principais</label>
-        <input type="radio" name="opcao-pagina" id="pagina-1"/>
-        <label htmlFor="pagina-1">Sobremesa</label>
-        <input type="radio" name="opcao-pagina" id="pagina-2"/>
-        <label htmlFor="pagina-2">Bebidas</label>
-    </div>
+function Navegacao({ alterarPaginaSelecionada }) {
+    return (
+        <div className="navegacao">
+            <button
+                className="botao-navegacao"
+                onClick={() => alterarPaginaSelecionada(0)}>
+                Pratos Principais
+            </button>
+            <button
+                className="botao-navegacao"
+                onClick={() => alterarPaginaSelecionada(1)}>
+                Sobremesas
+            </button>
+            <button
+                className="botao-navegacao"
+                onClick={() => alterarPaginaSelecionada(2)}>
+                Bebidas
+            </button>
+        </div>
+    );
 }
+
+export default Navegacao;
